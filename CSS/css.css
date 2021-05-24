@@ -1,0 +1,225 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card{
+  max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.title-cards{
+width: 100%;
+max-width: 1080px;
+margin: auto;
+padding: 20px;
+margin-top: 20px;
+text-align: center;
+color: #7a7a7a;
+}
+.card{
+min-width:150px;
+max-width: 350px;
+margin: 20px;
+border-radius: 6px;
+overflow: hidden;
+background:#fff;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+transition: all 400ms ease-out;
+cursor: default;
+}
+.card:hover{
+box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+transform: translateY(-3%);
+}
+.card img{
+width: 100%;
+height: 210px;
+}
+.card .contenido-card{
+padding: 15px;
+text-align: center;
+}
+.card .contenido-card h3{
+margin-bottom: 15px;
+color: #7a7a7a;
+}
+.card .contenido-card p{
+line-height: 1.8;
+color: #6a6a6a;
+font-size: 14px;
+margin-bottom: 5px;
+}
+.card .contenido-card button{
+display: inline-block;
+padding: 10px;
+margin-top: 10px;
+text-decoration: none;
+color: #2fb4cc;
+border: 1px solid #2fb4cc;
+border-radius: 4px;
+transition: all 400ms ease;
+margin-bottom: 5px;
+}
+.card .contenido-card button:hover{
+background: #2fb4cc;
+color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:720px){
+.container-card{
+  flex-wrap: wrap;
+}
+.card{
+  margin: 15px;
+}
+}
+
+/*menu*/
+.show {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: lower-alpha;
+  display: table;
+  width: auto;
+  text-align: center;
+}
+.lp {
+  display: table-cell;
+  position: 50px;
+  padding: 0px 0px;
+}
+.la {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  width: auto;
+}
+.la:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: auto;
+}
+.la:hover:after {
+  width: 100%;
+  left: 0;
+}
+/*/menu*/
+
+*{box-sizing:border-box;}
+
+		.cont{
+			width:95%;
+			max-width:2px;
+			padding:32px 64px;
+			margin:auto;
+		}
+
+		.soc{
+			/*las imágenes usadas tienen width de 48px*/
+			width:48px;
+			position:fixed;
+			top:50px;
+			right:0;
+		}
+
+		/* Extra centrado vertical*/
+
+		.soc{
+			/*border:1px solid #000;*/
+			top:50%;
+			height:205px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+			margin-top:-100px;
+		}
+
+.carrito{
+  max-width: 250px;
+  
+}
+
+.pagara{
+  font-family: monospace;
+  font-size: 8px;
+  padding:auto;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.pagara:hover{
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.botonk{
+  display:inline-block;
+	width:100px;
+	height:30px;
+	text-align:center;
+	font-size:14px;
+	border:1px solid ;
+	border-radius:5px;
+	cursor:pointer;
+	color:white;
+	padding:5px 0 5px 20px;
+	background-image: url(/iconos/carrito.png);
+	background-repeat:no-repeat;
+	
+    background-size:20px 20px;
+	background-position:10px 5px;	
+	
+}
+.botonk:hover{ background-color:#007095;}
+
+
+body {
+  font-family:sans-serif;
+  margin: 0;
+  
+}
+.titsc{
+text-align: center;
+}
+.sidebar{
+  position: absolute;
+  width: 250px;
+  height:100%;
+  background: #333;
+  color:#fff;
+  outline: 0px solid #2a2a2a;
+  
+  transition: all 0.3s;
+  
+}
+
+
+.contenido {
+  width: 100%;
+  height:100%;
+  position: absolute; 
+  background: #eee; 
+  transition: all 0.3s;
+}
+.menu-bar{
+  cursor: pointer;
+  width: 25px;
+}
+.abrir{
+ transform: translateX(250px);
+}
